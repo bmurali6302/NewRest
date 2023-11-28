@@ -1,0 +1,24 @@
+package com.lvg.demo.exception;
+
+public class CustomersNotFoundException extends RuntimeException{
+	private String message;
+	public CustomersNotFoundException() {
+		
+	}
+	public CustomersNotFoundException(String message) {
+		super();
+		this.message = message;
+	}
+	public String getMessage() {
+		return message;
+	}
+	public void setMessage(String message) {
+		this.message = message;
+	}
+	@Override
+	public String toString() {
+		return "CustomersNotFoundException [message=" + message + "]";
+	}
+	
+
+}
